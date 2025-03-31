@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./wp-config.php:/var/www/html/wp-config.php
+    ports:
+      - "80:80"
+    depends_on:
+      - mysql
+
+networks:
+  wp_network:
+    external: true 
