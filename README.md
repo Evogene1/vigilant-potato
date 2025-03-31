@@ -58,21 +58,17 @@ Customizing Security Groups
 ```
 terraform init
 ```
-2. Validate the Configuration
-```
-terraform validate
-```
-3. Plan the Deployment
+2. Plan the Deployment
 ```
 terraform plan
 ```
-4. Apply the Configuration
+3. Apply the Configuration
 ```
-terraform apply -auto-approve
+terraform apply
 ```
-6. Destroy the Infrastructure (If Needed)
+4. Destroy the Infrastructure (If Needed)
 ```
-terraform destroy -auto-approve
+terraform destroy
 ```
 
 ## Troubleshooting & Common Issues
